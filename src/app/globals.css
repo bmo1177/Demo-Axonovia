@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #fdfdfd;
+  --foreground: #0f172a;
+  --font-sans: var(--font-fira-sans), ui-sans-serif, system-ui;
+  --font-mono: var(--font-fira-code), ui-monospace, SFMono-Regular;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  
+  --shadow-glass-light: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Grain Texture Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Liquid Glass Utilities */
+.glass-panel {
+  @apply bg-white/60 backdrop-blur-2xl border border-white/40 shadow-2xl shadow-slate-200/50 rounded-2xl;
+}
+
+.glass-card {
+  @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-lg shadow-slate-100/50 rounded-2xl transition-all duration-500;
+}
+
+.glass-card:hover {
+  @apply shadow-2xl shadow-slate-200/60 -translate-y-1.5 bg-white/90 border-white/80;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600;
+}
+
+.bg-mesh {
+  background-color: #fdfdfd;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.08) 0px, transparent 40%),
+    radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.08) 0px, transparent 40%),
+    radial-gradient(at 50% 100%, rgba(56, 189, 248, 0.05) 0px, transparent 40%);
+}
+
+.primary-cta {
+  @apply px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold shadow-xl hover:shadow-2xl 
+         hover:bg-slate-800 hover:scale-[1.02] transition-all duration-300 cursor-pointer 
+         flex items-center justify-center gap-3 active:scale-95;
+}
+
+.secondary-cta {
+  @apply bg-white/60 backdrop-blur-2xl border border-white/40 shadow-xl shadow-slate-200/50 
+         rounded-2xl px-8 py-4 font-bold text-slate-800 hover:bg-white/90 
+         hover:scale-[1.02] transition-all duration-300 cursor-pointer 
+         flex items-center justify-center gap-3 active:scale-95 border-white/80;
+}
+
+a.secondary-cta {
+  @apply no-underline;
+}

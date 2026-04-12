@@ -1,0 +1,984 @@
+
+> vigilo-mini@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.17:3000
+- Environments: .env.local
+✓ Ready in 295ms
+
+ GET / 200 in 290ms (next.js: 129ms, application-code: 161ms)
+ GET / 200 in 38ms (next.js: 3ms, application-code: 35ms)
+ GET / 200 in 73ms (next.js: 4ms, application-code: 68ms)
+ GET / 200 in 41ms (next.js: 8ms, application-code: 33ms)
+📄 Parsing prefacture_sample.csv: reference,client,description,montant,date
+PRF-10421,Carrefour Supply,Transport Lyon-Paris,1250,2026-04-08
+PRF-10434,Supermarket TMS,Transport Marseille-Lyon,1600,2026-04-09
+PRF-10438,DHL Supply,Livrai
+✅ Parsed 5 rows from prefacture_sample.csv
+Sample row: {
+  reference: 'PRF-10421',
+  client: 'Carrefour Supply',
+  description: 'Transport Lyon-Paris',
+  montant: 1250,
+  date: '2026-04-08'
+}
+📄 Parsing proforma_sample.csv: reference,client,description,montant,date
+PRF-10421,Carrefour Supply,Transport Lyon-Paris,1250,2026-04-08
+PRF-10434,Supermarket TMS,Transport Marseille-Lyon,1250,2026-04-09
+PRF-10438,DHL Supply,Livrai
+✅ Parsed 5 rows from proforma_sample.csv
+Sample row: {
+  reference: 'PRF-10421',
+  client: 'Carrefour Supply',
+  description: 'Transport Lyon-Paris',
+  montant: 1250,
+  date: '2026-04-08'
+}
+ POST /api/parse 200 in 112ms (next.js: 90ms, application-code: 22ms)
+ GET /analyse 200 in 33ms (next.js: 17ms, application-code: 16ms)
+ GET / 200 in 43ms (next.js: 4ms, application-code: 39ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:914:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:927:33)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:914:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:927:33)
+ GET / 200 in 24ms (next.js: 1606µs, application-code: 22ms)
+✓ Compiled in 196ms
+✓ Compiled in 161ms
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+ GET / 500 in 921ms (next.js: 816ms, application-code: 105ms)
+ GET / 500 in 12ms (next.js: 5ms, application-code: 7ms)
+ GET / 500 in 16ms (next.js: 10ms, application-code: 7ms)
+ GET / 500 in 9ms (next.js: 4ms, application-code: 5ms)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+ GET / 500 in 19ms (next.js: 8ms, application-code: 12ms)
+ GET / 500 in 36ms (next.js: 13ms, application-code: 23ms)
+ GET / 500 in 35ms (next.js: 25ms, application-code: 10ms)
+ GET / 500 in 29ms (next.js: 11ms, application-code: 18ms)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+ GET / 500 in 14ms (next.js: 5ms, application-code: 9ms)
+ GET / 500 in 11ms (next.js: 4ms, application-code: 8ms)
+ GET / 500 in 20ms (next.js: 8ms, application-code: 13ms)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+ GET / 500 in 19ms (next.js: 7ms, application-code: 12ms)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./src/app/analyse/page.tsx:159:9
+Expression expected
+  [90m157 |[0m }
+  [90m158 |[0m
+[31m[1m>[0m [90m159 |[0m         )}
+  [90m    |[0m         [31m[1m^[0m
+  [90m160 |[0m       </div>
+  [90m161 |[0m     </main>
+  [90m162 |[0m   )
+
+Parsing ecmascript source code failed
+
+
+ GET /analyse 500 in 56ms (next.js: 25ms, application-code: 30ms)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] Uncaught Error: ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/analyse/page.tsx:159:9)
+    at <unknown> (Error: (./src/app/analyse/page.tsx:159:9)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/app/analyse/page.tsx:159:9
+Expression expected
+  157 | }
+  158 |
+> 159 |         )}
+      |         ^
+  160 |       </div>
+  161 |     </main>
+  162 |   )
+
+Parsing ecmascript source code failed 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+✓ Compiled in 103ms
+ GET / 200 in 212ms (next.js: 103ms, application-code: 108ms)
+ GET /analyse 200 in 246ms (next.js: 56ms, application-code: 190ms)
+ GET / 200 in 69ms (next.js: 9ms, application-code: 60ms)
+ GET / 200 in 69ms (next.js: 3ms, application-code: 66ms)
+ GET / 200 in 42ms (next.js: 5ms, application-code: 38ms)
+ GET / 200 in 21ms (next.js: 4ms, application-code: 18ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET /analyse 200 in 24ms (next.js: 5ms, application-code: 19ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 40ms (next.js: 4ms, application-code: 36ms)
+ GET / 200 in 21ms (next.js: 2ms, application-code: 19ms)
+ GET /analyse 200 in 37ms (next.js: 4ms, application-code: 33ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 23ms (next.js: 5ms, application-code: 18ms)
+ GET / 200 in 31ms (next.js: 3ms, application-code: 29ms)
+ GET /analyse 200 in 23ms (next.js: 3ms, application-code: 21ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 98ms (next.js: 10ms, application-code: 89ms)
+ GET / 200 in 33ms (next.js: 9ms, application-code: 24ms)
+ GET /analyse 200 in 21ms (next.js: 4ms, application-code: 17ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 45ms (next.js: 5ms, application-code: 40ms)
+ GET / 200 in 19ms (next.js: 3ms, application-code: 16ms)
+ GET /analyse?demo=true 200 in 41ms (next.js: 4ms, application-code: 37ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 20ms (next.js: 1822µs, application-code: 18ms)
+ GET /analyse?demo=true 200 in 35ms (next.js: 4ms, application-code: 31ms)
+[browser] ❌ Analysis error: Error: OpenRouter API Error: 400 - {"error":{"message":"google/gemini-2.0-flash-lite-preview-02-05:free is not a valid model ID","code":400},"user_id":"user_3BxN1MaU1gKTRKzaqoHzUSnZeiF"}
+    at callOpenRouter (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:188:15)
+    at async generateAlerte (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:222:28)
+    at async generateLitige (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:269:21)
+    at async runPipeline (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:381:21)
+    at async AnalysePage.useEffect.runAnalysis (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:989:40) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/src_0dtknce._.js:1000:33)
+ GET / 200 in 17ms (next.js: 3ms, application-code: 14ms)
+  Reload env: .env.local
+✓ Compiled in 21ms
+ GET / 200 in 109ms (next.js: 63ms, application-code: 46ms)
+ GET / 200 in 121ms (next.js: 97ms, application-code: 25ms)
+ GET / 200 in 30ms (next.js: 2ms, application-code: 27ms)
+ GET / 200 in 17ms (next.js: 1624µs, application-code: 15ms)
+✓ Compiled in 9ms
+ GET / 200 in 75ms (next.js: 4ms, application-code: 71ms)
+ GET / 200 in 34ms (next.js: 2ms, application-code: 32ms)
+ GET /analyse 200 in 46ms (next.js: 26ms, application-code: 21ms)
+ GET / 200 in 79ms (next.js: 1488µs, application-code: 77ms)
+ GET /analyse 200 in 21ms (next.js: 3ms, application-code: 19ms)
+ GET / 200 in 32ms (next.js: 2ms, application-code: 29ms)
+✓ Compiled in 8ms
+✓ Compiled in 42ms
+[browser] ./src/app/analyse/page.tsx:156:5
+Expected ',', got '{'
+  154 |       </div>
+  155 |     </main>
+> 156 |     {/* Simplified Footer */}
+      |     ^
+  157 |       <footer className="py-16 px-6 border-t border-slate-100 bg-white/30 backdrop-blur-s...
+  158 |         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-st...
+  159 |           <div className="space-y-4">
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/analyse/page.tsx [Client Component Browser]
+    ./src/app/analyse/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/analyse/page.tsx [Client Component SSR]
+    ./src/app/analyse/page.tsx [Server Component] 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:156:5
+Expected ',', got '{'
+  154 |       </div>
+  155 |     </main>
+> 156 |     {/* Simplified Footer */}
+      |     ^
+  157 |       <footer className="py-16 px-6 border-t border-slate-100 bg-white/30 backdrop-blur-s...
+  158 |         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-st...
+  159 |           <div className="space-y-4">
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/analyse/page.tsx [Client Component Browser]
+    ./src/app/analyse/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/analyse/page.tsx [Client Component SSR]
+    ./src/app/analyse/page.tsx [Server Component] 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:156:5
+Expected ',', got '{'
+  154 |       </div>
+  155 |     </main>
+> 156 |     {/* Simplified Footer */}
+      |     ^
+  157 |       <footer className="py-16 px-6 border-t border-slate-100 bg-white/30 backdrop-blur-s...
+  158 |         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-st...
+  159 |           <div className="space-y-4">
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/analyse/page.tsx [Client Component Browser]
+    ./src/app/analyse/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/analyse/page.tsx [Client Component SSR]
+    ./src/app/analyse/page.tsx [Server Component] 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/app/analyse/page.tsx:156:5
+Expected ',', got '{'
+  154 |       </div>
+  155 |     </main>
+> 156 |     {/* Simplified Footer */}
+      |     ^
+  157 |       <footer className="py-16 px-6 border-t border-slate-100 bg-white/30 backdrop-blur-s...
+  158 |         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-st...
+  159 |           <div className="space-y-4">
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/app/analyse/page.tsx [Client Component Browser]
+    ./src/app/analyse/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/analyse/page.tsx [Client Component SSR]
+    ./src/app/analyse/page.tsx [Server Component] 
+    at handleErrors (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file:///home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+✓ Compiled in 21ms
+ GET / 200 in 110ms (next.js: 8ms, application-code: 102ms)
+ GET / 200 in 65ms (next.js: 4ms, application-code: 61ms)
+ GET / 200 in 61ms (next.js: 4ms, application-code: 57ms)
+ GET / 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET / 200 in 31ms (next.js: 3ms, application-code: 28ms)
+ GET / 200 in 46ms (next.js: 4ms, application-code: 42ms)
+ GET /analyse 200 in 23ms (next.js: 7ms, application-code: 16ms)
+Persisting failed: Unable to write SST file 00000347.sst
+
+Caused by:
+    No such file or directory (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+
+thread 'tokio-runtime-worker' (45256) panicked at turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:225:17:
+Failed to restore task data (corrupted database or bug): Data for batch of 2 tasks
+
+Caused by:
+    0: Looking up typed data for 2 tasks from database failed
+    1: Unable to open static sorted file referenced from 00000314.meta
+    2: Unable to open static sorted file 00000309.sst
+    3: Failed to open SST file /home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/cache/turbopack/c573e8c4/00000309.sst
+    4: No such file or directory (os error 2)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'tokio-runtime-worker' (45256) panicked at turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:197:17:
+Failed to restore task data (corrupted database or bug): Data for TaskId 627)
+
+Caused by:
+    0: Looking up task storage for TaskId 627 from database failed
+    1: Unable to open static sorted file referenced from 00000189.meta
+    2: Unable to open static sorted file 00000188.sst
+    3: Failed to open SST file /home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/cache/turbopack/c573e8c4/00000188.sst
+    4: No such file or directory (os error 2)
+
+thread 'tokio-runtime-worker' (45256) panicked at turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:225:17:
+Failed to restore task data (corrupted database or bug): Data for batch of 2 tasks
+
+Caused by:
+    0: Looking up typed data for 2 tasks from database failed
+    1: Unable to open static sorted file referenced from 00000189.meta
+    2: Unable to open static sorted file 00000188.sst
+    3: Failed to open SST file /home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/cache/turbopack/c573e8c4/00000188.sst
+    4: No such file or directory (os error 2)
+
+thread 'tokio-runtime-worker' (45256) panicked at turbopack/crates/turbo-tasks-backend/src/backend/operation/mod.rs:197:17:
+Failed to restore task data (corrupted database or bug): Data for TaskId 42849)
+
+Caused by:
+    0: Looking up task storage for TaskId 42849 from database failed
+    1: Unable to open static sorted file referenced from 00000189.meta
+    2: Unable to open static sorted file 00000188.sst
+    3: Failed to open SST file /home/dev-lab/Documents/Axonovia Demo/vigilo-mini/.next/dev/cache/turbopack/c573e8c4/00000188.sst
+    4: No such file or directory (os error 2)
+Persisting failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+Compaction failed: Another write batch or compaction is already active (Only a single write operations is allowed at a time)
+[?25h
