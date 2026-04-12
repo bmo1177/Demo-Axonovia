@@ -21,7 +21,7 @@ async function callOpenRouter(prompt: string): Promise<string> {
     headers: {
       'Authorization': `Bearer ${OPENROUTER_KEY}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'http://localhost:3000',
+      'HTTP-Referer': 'https://demo-axonovia-git-main-bmo1177s-projects.vercel.app/', //change to LocalHost if want to test the app locally, use: ''http://localhost:3000
       'X-Title': 'Vigilo Mini Prototype'
     },
     body: JSON.stringify({
