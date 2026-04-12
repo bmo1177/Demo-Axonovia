@@ -2,10 +2,10 @@
 import { ResultatRapprochement, DossierLitige } from '@/types'
 
 // ================= CONFIGURATION =================
-// const USE_REAL_AI = process.env.NEXT_PUBLIC_AI_MODE_ENABLED === 'true' || process.env.NEXT_PUBLIC_OPENROUTER_MODE === 'true'
-const USE_REAL_AI = !!OPENROUTER_KEY
-// const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+const USE_REAL_AI = process.env.NEXT_PUBLIC_AI_MODE_ENABLED === 'true' || process.env.NEXT_PUBLIC_OPENROUTER_MODE === 'true'
+//const USE_REAL_AI = !!OPENROUTER_KEY
 const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+//const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY || process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
 const MODEL = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || 'nvidia/nemotron-3-super-120b-a12b:free'
 
 if (typeof window !== 'undefined') {
