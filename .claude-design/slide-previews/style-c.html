@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style C: Electric Studio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap">
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-white: #ffffff;
+            --accent: #4361ee;
+            --text-dark: #0a0a0a;
+            --text-light: #ffffff;
+            --font: 'Manrope', sans-serif;
+        }
+        body, html { margin: 0; padding: 0; height: 100%; height: 100dvh; font-family: var(--font); overflow: hidden; }
+        .slide { display: flex; flex-direction: column; height: 100%; }
+        .panel-top { flex: 1.2; background: var(--bg-white); color: var(--text-dark); display: flex; flex-direction: column; justify-content: center; padding: 0 10vw; position: relative; }
+        .panel-bottom { flex: 0.8; background: var(--accent); color: var(--text-light); display: flex; flex-direction: column; justify-content: center; padding: 0 10vw; text-transform: uppercase; letter-spacing: 4px; font-weight: 800; font-size: clamp(1rem, 2vw, 1.5rem); }
+        h1 { font-size: clamp(3rem, 12vw, 10rem); font-weight: 800; margin: 0; line-height: 0.85; letter-spacing: -4px; }
+        .accent-bar { position: absolute; bottom: 0; left: 10vw; width: 100px; height: 8px; background: var(--accent); }
+    </style>
+</head>
+<body>
+    <section class="slide">
+        <div class="panel-top">
+            <h1>VIGILO</h1>
+            <div class="accent-bar"></div>
+        </div>
+        <div class="panel-bottom">
+            MINI PROTOTYPE / AI NATIVE ENGINE
+        </div>
+    </section>
+</body>
+</html>
